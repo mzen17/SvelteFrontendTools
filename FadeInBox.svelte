@@ -1,4 +1,13 @@
 <script lang="ts">
+/*
+Author: Mike Zeng
+License: MIT License 2024
+=================================
+Usage: Copy paste this to lib.
+Then create <FadeInBox> content </FadeInBox>
+
+Note, you will need the custom tailwindCSS config.
+*/
     import { onMount } from 'svelte';
     let primid = Date.now() + Math.random().toString(36).substring(2);;
     export let tailwind = "";
@@ -38,6 +47,6 @@
     });
 
 </script>
-<div class = {tailwind + (inView ? " animate-fade-in-fast" : " opacity-0")} id={"card"+primid}>
+<div class = {tailwind + (inView ? " animate-fade-in-fast" : " animate-fade-out-fast")} id={"card"+primid}>
     <slot />
 </div>
