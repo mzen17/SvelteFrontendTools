@@ -1,3 +1,4 @@
+<script context="module" lang="ts">
 /*
 Author: Mike Zeng
 LICENSE: MIT License - 2024
@@ -20,7 +21,6 @@ Create a typing element as follows:
 For more examples, visit the West Computing Club pages directory.
 */
 
-<script context="module" lang="ts">
     export interface TypingEffectProps {
       text: string;
       tailwind: string;
